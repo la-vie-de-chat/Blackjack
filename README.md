@@ -10,7 +10,7 @@ A Mini Gambling - Blackjack
 5. class Player:<br />
 6. class DealerPlayer:<br />
    Inherits Player class and defines the attributes of dealer player<br />
-7. class BlackJackGameSimulator (main):<br />
+7. class BlackJackSimulator (main):<br />
    Simulates a blackjack game and test for functionality<br />
 
 
