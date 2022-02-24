@@ -14,7 +14,7 @@ public class Deck {
     }
 
     public void shuffle() { // 洗牌
-        for (int i = cards.size() - 1; i >= 0; i++) {
+        for (int i = cards.size() - 1; i >= 0; i--) {
             int j = rand.nextInt(i + 1); // return an integer between 0 and i, including i
             Card card1 = cards.get(i);
             Card card2 = cards.get(j);

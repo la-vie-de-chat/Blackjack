@@ -26,7 +26,7 @@ public class Player {
             } else if (!cur.isAce()) {
                 score += cur.value();
             } else {
-                break; // current card is Ace
+                break; // if card is Ace
             }
             i++;
         }
@@ -45,7 +45,7 @@ public class Player {
         }
     }
 
-    public boolean isBusted() {
+    public boolean isBusted() { // score > 21
         return score() == 0;
     }
 
@@ -55,7 +55,7 @@ public class Player {
 
     public void stand() {}
 
-    public boolean isBlackJack() {
+    public boolean isBlackJack() { // an A with any J/Q/K is blackjack
         if (cards.size() != 2) {
             return false;
         }
